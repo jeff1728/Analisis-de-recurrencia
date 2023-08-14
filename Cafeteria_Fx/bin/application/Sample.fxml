@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <Pane prefHeight="403.0" prefWidth="584.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="210.0" layoutY="14.0" prefHeight="54.0" prefWidth="165.0" text="CAFETERÍA" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="223.0" layoutY="93.0" text="Cuantos cafes va a tomar?" textFill="WHITE" />
+            <TextField fx:id="txtcantidad" layoutX="218.0" layoutY="112.0" promptText="ingrese el num. de cafes" style="-fx-background-color: #ffffff; -fx-background-radius: 9;" />
+            <ImageView fitHeight="147.0" fitWidth="213.0" layoutX="371.0" layoutY="281.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cafe_image.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="fxingresar" layoutX="86.0" layoutY="166.0" onAction="#fxingresar" prefHeight="72.0" prefWidth="137.0" style="-fx-background-radius: 10; -fx-background-color: #9c0000;" text="Ingresar" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="36.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="217.0" layoutY="142.0" prefHeight="2.0" prefWidth="146.0" />
+            <JFXTextArea fx:id="txtArea" layoutX="25.0" layoutY="253.0" prefHeight="115.0" prefWidth="326.0" style="-fx-background-color: white;" />
+            <JFXButton fx:id="fxcomprar" layoutX="293.0" layoutY="172.0" onAction="#fxcomprar" prefHeight="72.0" prefWidth="166.0" style="-fx-background-radius: 10; -fx-background-color: #9c0000;" text="COMPRAR" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="36.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
